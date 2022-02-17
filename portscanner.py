@@ -10,19 +10,12 @@ from queue import Queue
 socket.setdefaulttimeout(0.25)
 print_lock = threading.Lock()
 
-
-
-
 square = f"{Fore.RED}[{Style.RESET_ALL}{Fore.BLUE}+{Style.RESET_ALL}{Fore.RED}]{Style.RESET_ALL}"
-
-
-
 
 print (f"" + square + Fore.BLUE + " Welcome.")
 colour1 = f"{Fore.RED}[{Style.RESET_ALL}"
 colour2 = f"{Fore.RED}]{Style.RESET_ALL}"
 print("[!] NOTE - If you do not get any results at the end that may mean the ports are filtered.")
-
 
 scan_ = ""
 scan_ = input(f"" + square + Fore.BLUE + " Do you wish to do a network scan for targets?[Y/N]: ")
@@ -32,9 +25,6 @@ if scan_ != "n" and scan_ != "N":
 
 else:
     pass
-
-
-
 
 target = input(f"{Fore.GREEN}[*] Enter the host to be scanned: {Style.RESET_ALL}")
 t_IP = socket.gethostbyname(target)
